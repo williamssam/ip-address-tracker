@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- leaftlet css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <!-- leaflet js -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        /* margin-top: 25rem; */
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">IP Address Tracker</h1>
+
+      <form class="form">
+        <input
+          type="text"
+          name="ip-address"
+          id="ip-address"
+          class="input"
+          placeholder="Search for any IP address or domain"
+        />
+
+        <div class="loading-div">
+          <img src="./images/icon-arrow.svg" class="arrow" />
+        </div>
+      </form>
+    </header>
+
+    <main>
+      <section class="data-received">
+        <div>
+          <p class="heading">ip address</p>
+          <h2 class="result" id="ip-result"></h2>
+        </div>
+
+        <div>
+          <p class="heading">location</p>
+          <h2 class="result" id="state-result"></h2>
+        </div>
+
+        <div>
+          <p class="heading">timezone</p>
+          <h2 class="result" id="timezone-result"></h2>
+        </div>
+
+        <div class="last-div">
+          <p class="heading">isp</p>
+          <h2 class="result" id="isp-result"></h2>
+        </div>
+      </section>
+
+      <section class="map" id="map"></section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://twitter.com/williams_codes">Williams Samuel</a>.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
