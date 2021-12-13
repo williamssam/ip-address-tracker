@@ -75,11 +75,8 @@ body {
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  /* background: transparent; */
-  /* border: 0.25rem solid transparent; */
   border-top: 4px solid #fff;
   border-right: 4px solid transparent;
-  /* border-top-color: white; */
   animation: spin 1s infinite linear;
 }
 
